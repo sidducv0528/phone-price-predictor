@@ -45,10 +45,11 @@ st.markdown(
     /* Background + base text color */
     .stApp {
         background:
-            linear-gradient(rgba(5,6,10,0.88), rgba(13,15,26,0.92)),
+            linear-gradient(rgba(5,6,10,0.95), rgba(13,15,26,0.97)),
             url("https://images.unsplash.com/photo-1511707171634-5f897ff02aa9");
         background-size: cover;
-        background-position: center;
+        background-position: top center;
+        background-repeat: no-repeat;
         background-attachment: fixed;
         color: #eaeaf0;
     }
