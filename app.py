@@ -45,13 +45,13 @@ st.markdown(
     /* Background + base text color */
     .stApp {
         background:
-            linear-gradient(rgba(5,6,10,0.95), rgba(13,15,26,0.97)),
+            linear-gradient(rgba(255,255,255,0.55), rgba(240,242,250,0.65)),
             url("https://images.unsplash.com/photo-1511707171634-5f897ff02aa9");
         background-size: cover;
         background-position: top center;
         background-repeat: no-repeat;
         background-attachment: fixed;
-        color: #eaeaf0;
+        color: #1c1e2b;
     }
 
     /* Hide Streamlit's default chrome for a cleaner, product-like look */
@@ -63,7 +63,7 @@ st.markdown(
     h1 {
         font-family: 'Segoe UI', sans-serif;
         font-weight: 800;
-        background: linear-gradient(90deg, #7dd3fc, #a78bfa, #f472b6);
+        background: linear-gradient(90deg, #0284c7, #7c3aed, #db2777);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         padding-bottom: 0.3rem;
@@ -71,31 +71,36 @@ st.markdown(
 
     /* Subheader */
     h3 {
-        color: #cdd3ee;
+        color: #2b2d42;
         font-weight: 600;
     }
 
-    /* Glassy card look for the form */
+    /* Body text */
+    p, label, span {
+        color: #2b2d42;
+    }
+
+    /* Light glassy card look for the form */
     div[data-testid="stForm"] {
-        background: rgba(20, 22, 38, 0.65);
-        border: 1px solid rgba(167, 139, 250, 0.25);
+        background: rgba(255, 255, 255, 0.75);
+        border: 1px solid rgba(124, 58, 237, 0.2);
         border-radius: 20px;
         padding: 2.2rem;
-        box-shadow: 0 12px 48px rgba(0,0,0,0.55);
-        backdrop-filter: blur(16px);
-        -webkit-backdrop-filter: blur(16px);
+        box-shadow: 0 12px 40px rgba(0,0,0,0.12);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
     }
 
     /* Labels inside the form */
     div[data-testid="stForm"] label {
-        color: #dcdfef !important;
+        color: #2b2d42 !important;
         font-weight: 500;
     }
 
     /* Gradient submit button */
     button[kind="formSubmit"] {
-        background: linear-gradient(90deg, #7dd3fc, #a78bfa, #f472b6) !important;
-        color: #0d0f1a !important;
+        background: linear-gradient(90deg, #0284c7, #7c3aed, #db2777) !important;
+        color: #ffffff !important;
         font-weight: 700 !important;
         border-radius: 14px !important;
         border: none !important;
@@ -104,7 +109,7 @@ st.markdown(
     }
     button[kind="formSubmit"]:hover {
         transform: translateY(-3px) scale(1.02);
-        box-shadow: 0 10px 30px rgba(167, 139, 250, 0.5);
+        box-shadow: 0 10px 30px rgba(124, 58, 237, 0.35);
     }
 
     /* Result box */
