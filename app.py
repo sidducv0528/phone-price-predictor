@@ -47,8 +47,8 @@ st.markdown(
         background:
             linear-gradient(rgba(255,255,255,0.08), rgba(255,255,255,0.08)),
             url("https://images.unsplash.com/photo-1511707171634-5f897ff02aa9");
-        background-size: cover;
-        background-position: center;
+        background-size: 100% auto;
+        background-position: top center;
         background-repeat: no-repeat;
         background-attachment: fixed;
         color: #1c1e2b;
