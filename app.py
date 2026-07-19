@@ -45,8 +45,8 @@ st.markdown(
     /* Background + base text color */
     .stApp {
         background:
-            linear-gradient(rgba(255,255,255,0.08), rgba(255,255,255,0.08)),
-            url("https://techarx.com/wp-content/uploads/2020/05/best_phones.jpg");
+            linear-gradient(rgba(255,255,255,0.15), rgba(255,255,255,0.15)),
+            url("https://images.unsplash.com/photo-1511707171634-5f897ff02aa9");
         background-size: 100% auto;
         background-position: top center;
         background-repeat: no-repeat;
@@ -59,44 +59,82 @@ st.markdown(
         visibility: hidden;
     }
 
-    /* Gradient page title */
-    h1 {
+    /* Solid header card - keeps the title/intro readable regardless of the photo behind it */
+    .header-card {
+        background: rgba(255, 255, 255, 0.96);
+        border-radius: 20px;
+        padding: 1.6rem 2rem;
+        margin-bottom: 1.5rem;
+        box-shadow: 0 12px 40px rgba(0,0,0,0.18);
+        border: 1px solid rgba(124, 58, 237, 0.15);
+    }
+    .header-card h1 {
         font-family: 'Segoe UI', sans-serif;
         font-weight: 800;
+        font-size: 2rem;
+        margin: 0 0 0.4rem 0;
         background: linear-gradient(90deg, #0284c7, #7c3aed, #db2777);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        padding-bottom: 0.3rem;
-        text-shadow: 0 2px 12px rgba(255,255,255,0.5);
+    }
+    .header-card p {
+        color: #4b4f63;
+        font-size: 1rem;
+        margin: 0;
     }
 
-    /* Subheader */
+    /* Subheader ("Phone Details") */
     h3 {
-        color: #1c1e2b;
+        color: #ffffff;
         font-weight: 700;
-        text-shadow: 0 1px 8px rgba(255,255,255,0.7);
+        background: linear-gradient(90deg, #0284c7, #7c3aed);
+        display: inline-block;
+        padding: 0.4rem 1rem;
+        border-radius: 10px;
+        margin-bottom: 0.8rem;
     }
 
-    /* Body text (intro line, sits directly on the photo) */
-    div[data-testid="stMarkdownContainer"] p {
-        color: #1c1e2b;
-        font-weight: 600;
-        text-shadow: 0 1px 8px rgba(255,255,255,0.7);
-    }
-
-    /* Solid card so form stays readable over a busy photo */
+    /* Solid card so the form stays readable over the photo */
     div[data-testid="stForm"] {
-        background: rgba(255, 255, 255, 0.94);
+        background: rgba(255, 255, 255, 0.96);
         border: 1px solid rgba(124, 58, 237, 0.2);
         border-radius: 20px;
         padding: 2.2rem;
-        box-shadow: 0 12px 40px rgba(0,0,0,0.25);
+        box-shadow: 0 12px 40px rgba(0,0,0,0.20);
     }
 
     /* Labels inside the form */
-    div[data-testid="stForm"] label {
+    div[data-testid="stForm"] label,
+    label {
         color: #2b2d42 !important;
-        font-weight: 500;
+        font-weight: 600 !important;
+    }
+
+    /* Selectboxes (Brand, Model, Condition, etc.) - restyle to match light theme */
+    div[data-baseweb="select"] > div {
+        background-color: #f1f3f9 !important;
+        border: 1px solid #d7dbe8 !important;
+        border-radius: 10px !important;
+        color: #1c1e2b !important;
+    }
+    div[data-baseweb="select"] span {
+        color: #1c1e2b !important;
+    }
+
+    /* Number inputs and sliders */
+    div[data-testid="stNumberInput"] input {
+        background-color: #f1f3f9 !important;
+        color: #1c1e2b !important;
+        border: 1px solid #d7dbe8 !important;
+        border-radius: 10px !important;
+    }
+    div[data-testid="stNumberInput"] button {
+        background-color: #e7e9f5 !important;
+        border: 1px solid #d7dbe8 !important;
+        color: #1c1e2b !important;
+    }
+    div[data-testid="stSlider"] {
+        padding-top: 0.4rem;
     }
 
     /* Gradient submit button */
@@ -107,10 +145,11 @@ st.markdown(
         border-radius: 14px !important;
         border: none !important;
         padding: 0.7rem 2rem !important;
+        width: 100%;
         transition: all 0.2s ease-in-out;
     }
     button[kind="formSubmit"]:hover {
-        transform: translateY(-3px) scale(1.02);
+        transform: translateY(-3px) scale(1.01);
         box-shadow: 0 10px 30px rgba(124, 58, 237, 0.35);
     }
 
@@ -118,6 +157,7 @@ st.markdown(
     div[data-testid="stAlertContainer"] {
         border-radius: 16px;
         font-size: 1.1rem;
+        background: rgba(255, 255, 255, 0.96) !important;
     }
     </style>
     """,
@@ -127,8 +167,15 @@ st.markdown(
 # ---------------------------------------------------------------------------
 # HEADER
 # ---------------------------------------------------------------------------
-st.title("📱 Used Phone Resale Price Predictor")
-st.write("Fill in the phone's details below and get an instant resale price estimate.")
+st.markdown(
+    """
+    <div class="header-card">
+        <h1>📱 Used Phone Resale Price Predictor</h1>
+        <p>Fill in the phone's details below and get an instant resale price estimate.</p>
+    </div>
+    """,
+    unsafe_allow_html=True,
+)
 
 # ---------------------------------------------------------------------------
 # DROPDOWN OPTIONS (must match the categories seen during training)
