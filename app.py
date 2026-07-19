@@ -45,13 +45,12 @@ st.markdown(
     /* Background + base text color */
     .stApp {
         background:
-            linear-gradient(rgba(255,255,255,0.15), rgba(255,255,255,0.15)),
-            url("https://images.unsplash.com/photo-1511707171634-5f897ff02aa9");
-        background-size: 100% auto;
-        background-position: top center;
-        background-repeat: no-repeat;
+            linear-gradient(rgba(5,6,10,0.88), rgba(13,15,26,0.92)),
+            url("https://images.unsplash.com/photo-1511707171634-5f897ff02aa9.jpg");
+        background-size: cover;
+        background-position: center;
         background-attachment: fixed;
-        color: #1c1e2b;
+        color: #eaeaf0;
     }
 
     /* Hide Streamlit's default chrome for a cleaner, product-like look */
@@ -59,88 +58,73 @@ st.markdown(
         visibility: hidden;
     }
 
-    /* Solid header card - keeps the title/intro readable regardless of the photo behind it */
-    .header-card {
-        background: rgba(255, 255, 255, 0.96);
-        border-radius: 20px;
-        padding: 1.6rem 2rem;
-        margin-bottom: 1.5rem;
-        box-shadow: 0 12px 40px rgba(0,0,0,0.18);
-        border: 1px solid rgba(124, 58, 237, 0.15);
-    }
-    .header-card h1 {
+    /* Gradient page title */
+    h1 {
         font-family: 'Segoe UI', sans-serif;
         font-weight: 800;
-        font-size: 2rem;
-        margin: 0 0 0.4rem 0;
-        background: linear-gradient(90deg, #0284c7, #7c3aed, #db2777);
+        background: linear-gradient(90deg, #7dd3fc, #a78bfa, #f472b6);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-    }
-    .header-card p {
-        color: #4b4f63;
-        font-size: 1rem;
-        margin: 0;
+        padding-bottom: 0.3rem;
     }
 
     /* Subheader ("Phone Details") */
     h3 {
-        color: #ffffff;
+        color: #eaeaf0;
         font-weight: 700;
-        background: linear-gradient(90deg, #0284c7, #7c3aed);
-        display: inline-block;
-        padding: 0.4rem 1rem;
-        border-radius: 10px;
-        margin-bottom: 0.8rem;
     }
 
-    /* Solid card so the form stays readable over the photo */
+    /* Body text */
+    div[data-testid="stMarkdownContainer"] p {
+        color: #cdd3ee;
+    }
+
+    /* Glassy dark card for the form */
     div[data-testid="stForm"] {
-        background: rgba(255, 255, 255, 0.96);
-        border: 1px solid rgba(124, 58, 237, 0.2);
+        background: rgba(20, 22, 38, 0.65);
+        border: 1px solid rgba(167, 139, 250, 0.25);
         border-radius: 20px;
         padding: 2.2rem;
-        box-shadow: 0 12px 40px rgba(0,0,0,0.20);
+        box-shadow: 0 12px 48px rgba(0,0,0,0.55);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
     }
 
-    /* Labels inside the form */
+    /* Labels */
     div[data-testid="stForm"] label,
     label {
-        color: #2b2d42 !important;
-        font-weight: 600 !important;
+        color: #dcdfef !important;
+        font-weight: 500;
     }
 
-    /* Selectboxes (Brand, Model, Condition, etc.) - restyle to match light theme */
+    /* Selectboxes (Brand, Model, Condition, etc.) */
     div[data-baseweb="select"] > div {
-        background-color: #f1f3f9 !important;
-        border: 1px solid #d7dbe8 !important;
+        background-color: rgba(255, 255, 255, 0.06) !important;
+        border: 1px solid rgba(167, 139, 250, 0.3) !important;
         border-radius: 10px !important;
-        color: #1c1e2b !important;
+        color: #eaeaf0 !important;
     }
     div[data-baseweb="select"] span {
-        color: #1c1e2b !important;
+        color: #eaeaf0 !important;
     }
 
-    /* Number inputs and sliders */
+    /* Number inputs */
     div[data-testid="stNumberInput"] input {
-        background-color: #f1f3f9 !important;
-        color: #1c1e2b !important;
-        border: 1px solid #d7dbe8 !important;
+        background-color: rgba(255, 255, 255, 0.06) !important;
+        color: #eaeaf0 !important;
+        border: 1px solid rgba(167, 139, 250, 0.3) !important;
         border-radius: 10px !important;
     }
     div[data-testid="stNumberInput"] button {
-        background-color: #e7e9f5 !important;
-        border: 1px solid #d7dbe8 !important;
-        color: #1c1e2b !important;
-    }
-    div[data-testid="stSlider"] {
-        padding-top: 0.4rem;
+        background-color: rgba(255, 255, 255, 0.1) !important;
+        border: 1px solid rgba(167, 139, 250, 0.3) !important;
+        color: #eaeaf0 !important;
     }
 
     /* Gradient submit button */
     button[kind="formSubmit"] {
-        background: linear-gradient(90deg, #0284c7, #7c3aed, #db2777) !important;
-        color: #ffffff !important;
+        background: linear-gradient(90deg, #7dd3fc, #a78bfa, #f472b6) !important;
+        color: #0d0f1a !important;
         font-weight: 700 !important;
         border-radius: 14px !important;
         border: none !important;
@@ -149,15 +133,14 @@ st.markdown(
         transition: all 0.2s ease-in-out;
     }
     button[kind="formSubmit"]:hover {
-        transform: translateY(-3px) scale(1.01);
-        box-shadow: 0 10px 30px rgba(124, 58, 237, 0.35);
+        transform: translateY(-3px) scale(1.02);
+        box-shadow: 0 10px 30px rgba(167, 139, 250, 0.5);
     }
 
     /* Result box */
     div[data-testid="stAlertContainer"] {
         border-radius: 16px;
         font-size: 1.1rem;
-        background: rgba(255, 255, 255, 0.96) !important;
     }
     </style>
     """,
@@ -167,15 +150,8 @@ st.markdown(
 # ---------------------------------------------------------------------------
 # HEADER
 # ---------------------------------------------------------------------------
-st.markdown(
-    """
-    <div class="header-card">
-        <h1>📱 Used Phone Resale Price Predictor</h1>
-        <p>Fill in the phone's details below and get an instant resale price estimate.</p>
-    </div>
-    """,
-    unsafe_allow_html=True,
-)
+st.title("📱 Used Phone Resale Price Predictor")
+st.write("Fill in the phone's details below and get an instant resale price estimate.")
 
 # ---------------------------------------------------------------------------
 # DROPDOWN OPTIONS (must match the categories seen during training)
