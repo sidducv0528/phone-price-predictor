@@ -45,10 +45,10 @@ st.markdown(
     /* Background + base text color */
     .stApp {
         background:
-            linear-gradient(rgba(255,255,255,0.55), rgba(240,242,250,0.65)),
+            linear-gradient(rgba(255,255,255,0.08), rgba(255,255,255,0.08)),
             url("https://images.unsplash.com/photo-1511707171634-5f897ff02aa9");
         background-size: cover;
-        background-position: top center;
+        background-position: center;
         background-repeat: no-repeat;
         background-attachment: fixed;
         color: #1c1e2b;
@@ -67,28 +67,30 @@ st.markdown(
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         padding-bottom: 0.3rem;
+        text-shadow: 0 2px 12px rgba(255,255,255,0.5);
     }
 
     /* Subheader */
     h3 {
-        color: #2b2d42;
+        color: #1c1e2b;
+        font-weight: 700;
+        text-shadow: 0 1px 8px rgba(255,255,255,0.7);
+    }
+
+    /* Body text (intro line, sits directly on the photo) */
+    div[data-testid="stMarkdownContainer"] p {
+        color: #1c1e2b;
         font-weight: 600;
+        text-shadow: 0 1px 8px rgba(255,255,255,0.7);
     }
 
-    /* Body text */
-    p, label, span {
-        color: #2b2d42;
-    }
-
-    /* Light glassy card look for the form */
+    /* Solid card so form stays readable over a busy photo */
     div[data-testid="stForm"] {
-        background: rgba(255, 255, 255, 0.75);
+        background: rgba(255, 255, 255, 0.94);
         border: 1px solid rgba(124, 58, 237, 0.2);
         border-radius: 20px;
         padding: 2.2rem;
-        box-shadow: 0 12px 40px rgba(0,0,0,0.12);
-        backdrop-filter: blur(12px);
-        -webkit-backdrop-filter: blur(12px);
+        box-shadow: 0 12px 40px rgba(0,0,0,0.25);
     }
 
     /* Labels inside the form */
