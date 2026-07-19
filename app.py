@@ -9,7 +9,7 @@ from tensorflow import keras
 # ---------------------------------------------------------------------------
 @st.cache_resource
 def load_artifacts():
-    model = keras.models.load_model("phone_price_ann_model.keras")
+    model = keras.models.load_model(f"{MODEL_DIR}/phone_price_ann_model.keras")
     x_scaler = joblib.load("x_scaler.pkl")
     y_scaler = joblib.load("y_scaler.pkl")
     feature_names = joblib.load("feature_names.pkl")
