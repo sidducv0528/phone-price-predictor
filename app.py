@@ -46,7 +46,7 @@ st.markdown(
     .stApp {
         background:
             linear-gradient(rgba(255,255,255,0.08), rgba(255,255,255,0.08)),
-            url("https://images.unsplash.com/photo-1511707171634-5f897ff02aa9");
+            url("https://techarx.com/wp-content/uploads/2020/05/best_phones.jpg");
         background-size: 100% auto;
         background-position: top center;
         background-repeat: no-repeat;
