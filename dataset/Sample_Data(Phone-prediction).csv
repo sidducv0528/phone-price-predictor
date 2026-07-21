@@ -1,0 +1,50 @@
+brand,model,release_year,ram_gb,storage_gb,screen_size_inches,battery_capacity,processor_score,camera_score,os_type,has_5g,original_price,purchase_year,age_months,usage_hours_per_day,condition,battery_health,screen_cracked,body_damage,repair_history,water_damage,city_tier,seller_type,warranty_remaining_months,box_available,charger_available,market_demand_score,resale_price
+Realme,Realme GT,2025,4,256,6.93,4130,47,100,Android,1,147337,2025,52,2.7,Excellent,78,0,0,0,0,Tier1,Individual,11,1,1,99,47891.46
+Samsung,Galaxy S21,2024,16,64,6.29,5558,81,67,Android,1,75725,2024,49,2,Fair,98,0,0,0,0,Tier3,Store,8,1,0,64,17663.21
+Apple,iPhone 11,2022,4,128,5.52,5945,59,67,iOS,1,134358,2023,9,7.7,Fair,89,0,0,0,0,Tier1,Individual,0,0,1,68,67268.2
+Google,Pixel 6,2024,16,512,5.99,5767,84,57,Android,1,96807,2024,62,4.9,Good,99,0,0,0,1,Tier1,Store,11,1,1,50,12626.26
+Google,Pixel 7,2021,4,128,6.59,5336,98,44,Android,1,74505,2021,8,2.3,Fair,62,0,0,0,0,Tier3,Store,24,1,1,66,20662.25
+OnePlus,OnePlus 11,2025,6,128,6.64,6289,94,53,Android,1,129176,2025,3,8.8,Excellent,67,0,1,0,0,Tier2,Individual,0,1,1,84,64183.13
+Apple,iPhone 14,2025,4,256,5.8,5572,71,46,iOS,1,127845,2025,43,10.7,Fair,60,0,0,0,0,Tier2,Store,15,1,1,40,15863
+Vivo,Vivo V27,2022,12,1024,5.51,4479,66,48,Android,1,23545,2022,3,4.7,Poor,86,0,0,0,1,Tier1,Store,0,0,1,88,2282.3
+Apple,iPhone 15,2023,8,1024,5.56,5160,41,41,iOS,1,141926,2023,56,4.1,Poor,73,0,0,0,0,Tier2,Individual,0,0,1,56,15315.66
+Realme,Realme GT,2022,4,128,6.1,5799,55,72,Android,0,96202,2023,70,3.1,Excellent,74,0,0,0,0,Tier2,Individual,7,1,1,72,19919.49
+Vivo,Vivo V27,2025,4,512,6.51,5520,89,62,Android,1,40306,2025,1,3.5,Excellent,56,1,1,0,0,Tier2,Store,0,0,1,55,8461.59
+Realme,Realme Narzo 60,2021,6,256,6.85,3253,74,87,Android,0,143272,2021,36,1.1,Excellent,72,0,0,1,0,Tier2,Individual,0,0,1,59,31889.06
+Realme,Realme Narzo 60,2025,4,1024,6.49,6104,87,51,Android,1,29830,2025,67,3.8,Good,92,0,1,0,0,Tier3,Individual,17,1,1,72,8028.05
+Google,Pixel 8,2021,6,128,6.65,3016,83,67,Android,1,92989,2024,35,11.1,Good,95,1,0,0,0,Tier2,Store,20,0,1,71,27263.82
+OnePlus,OnePlus 10,2025,8,64,5.98,3127,57,64,Android,1,113746,2025,33,7.3,Excellent,86,0,0,0,0,Tier1,Individual,13,1,1,82,53377.33
+Vivo,Vivo X90,2020,12,256,6.8,3524,99,97,Android,0,120627,2021,50,9.8,Fair,100,0,1,0,0,Tier1,Individual,0,1,1,90,34294.65
+Google,Pixel 8,2019,8,128,6.97,5197,97,97,Android,0,80313,2020,63,10,Good,91,0,0,0,0,Tier3,Store,0,1,1,69,23608.82
+Xiaomi,Poco X5,2022,12,128,6.95,4129,69,58,Android,1,92750,2025,13,5.8,Fair,80,0,1,0,0,Tier2,Individual,0,0,1,73,28152.4
+Samsung,Galaxy S23,2024,16,512,5.77,6308,92,40,Android,1,39375,2025,48,7.1,Fair,57,0,0,0,0,Tier3,Store,1,0,0,69,7060.15
+OnePlus,OnePlus 10,2022,6,1024,6.71,4635,72,69,Android,1,114185,2025,48,7.8,Fair,88,0,0,1,0,Tier2,Individual,0,1,1,55,20943.83
+Vivo,Vivo V27,2025,4,128,5.54,3895,71,66,Android,1,21938,2025,2,8.1,Good,97,1,0,1,0,Tier3,Individual,16,0,0,41,6551.67
+Vivo,Vivo X90,2025,16,64,6.08,6017,65,73,Android,1,30358,2025,8,2.3,Fair,99,1,0,0,0,Tier2,Store,23,0,1,74,11716.14
+Google,Pixel 7,2019,16,256,6.06,5143,63,62,Android,1,71476,2021,36,3.6,Fair,77,0,0,1,0,Tier3,Individual,12,1,1,88,21772.49
+Realme,Realme GT,2022,16,256,6.36,4390,55,92,Android,0,112795,2023,52,4.6,Fair,90,1,0,0,0,Tier3,Store,1,1,1,62,16983.99
+Apple,iPhone 13,2023,12,128,6.95,6080,49,97,iOS,1,11542,2025,18,5.7,Good,63,0,0,0,0,Tier2,Individual,6,1,1,61,2997.22
+Realme,Realme Narzo 60,2023,16,128,6.14,4881,58,78,Android,1,96188,2024,39,1.1,Good,74,0,0,0,0,Tier3,Individual,0,0,1,99,31456.4
+Vivo,Vivo X90,2019,16,1024,6.29,4140,45,97,Android,0,139695,2019,56,7.1,Good,70,0,1,0,0,Tier1,Individual,7,0,1,88,26013.83
+OnePlus,OnePlus 10,2023,16,1024,6.85,6018,51,49,Android,1,31447,2024,3,5.3,Excellent,62,0,0,0,0,Tier1,Store,15,0,1,66,17886.55
+Xiaomi,Mi 11,2024,4,256,5.92,5036,59,52,Android,1,92844,2024,17,2.5,Excellent,60,1,0,0,0,Tier2,Individual,17,1,0,94,33002.69
+Apple,iPhone 12,2020,16,64,6.39,3062,64,61,iOS,1,56540,2020,11,1.7,Excellent,55,0,0,0,0,Tier1,Store,0,1,1,76,24337
+Vivo,Vivo V27,2023,16,128,5.86,5504,85,40,Android,1,67091,2023,17,3.5,Fair,86,0,0,0,0,Tier1,Store,0,1,1,93,30258.27
+Google,Pixel 6,2025,8,1024,6.13,4252,60,53,Android,1,63682,2025,47,10.9,Fair,88,0,0,0,0,Tier3,Store,21,1,1,63,19140.09
+Samsung,Galaxy S22,2025,8,512,6.43,5128,44,68,Android,0,65479,2025,30,10.3,Fair,74,0,1,0,0,Tier3,Store,0,0,0,94,16399.23
+Xiaomi,Poco X5,2022,12,64,6.02,6266,71,42,Android,1,125359,2025,4,2.9,Excellent,73,0,0,0,0,Tier1,Individual,0,0,1,65,56059.1
+Apple,iPhone 13,2024,4,1024,6.26,4836,66,48,iOS,0,32574,2025,49,7.9,Excellent,84,0,0,0,0,Tier3,Individual,0,1,1,54,10481.94
+Google,Pixel 6,2024,4,64,6.05,6287,41,84,Android,0,146198,2025,28,8.6,Fair,97,0,0,0,0,Tier3,Individual,2,0,1,67,50814.62
+Samsung,Galaxy S21,2020,4,256,5.82,3125,83,64,Android,1,119779,2020,17,6.2,Good,95,0,0,0,0,Tier1,Individual,0,1,1,81,71044.99
+OnePlus,Nord 3,2020,6,1024,6.03,3876,45,76,Android,1,126148,2021,59,2.1,Excellent,58,0,0,0,0,Tier1,Store,0,0,1,79,21641.17
+Samsung,Galaxy A54,2023,12,128,6.1,4755,50,43,Android,0,141189,2025,6,3.8,Excellent,56,0,0,0,0,Tier1,Individual,0,1,1,59,45086.34
+Realme,Realme Narzo 60,2025,8,512,6.42,3319,77,76,Android,1,42254,2025,1,6.3,Good,87,0,0,0,0,Tier2,Store,0,1,1,40,12147.8
+Vivo,Vivo V27,2025,4,64,5.68,5958,63,77,Android,1,52078,2025,17,11.2,Fair,98,0,1,1,0,Tier2,Store,22,0,1,61,16354.87
+Vivo,Vivo V27,2022,6,128,5.75,5052,58,98,Android,1,135501,2023,35,4.9,Fair,79,0,0,0,0,Tier1,Store,20,1,1,64,32018.58
+Samsung,Galaxy A54,2019,6,256,6.32,5151,90,78,Android,0,64917,2019,66,4.7,Fair,96,0,0,0,0,Tier2,Individual,14,1,1,72,17422.53
+Vivo,Vivo V27,2019,12,1024,6.35,3516,98,49,Android,1,135733,2024,68,6.9,Good,99,0,0,0,0,Tier1,Individual,0,1,1,70,30083.64
+Realme,Realme GT,2021,4,128,6.31,4834,66,44,Android,1,136205,2023,36,11,Good,62,0,0,0,0,Tier1,Store,5,1,0,99,37945.66
+Xiaomi,Redmi Note 12,2022,6,512,6.56,6177,88,67,Android,1,65176,2022,37,5.7,Fair,94,0,1,0,0,Tier1,Individual,13,1,0,96,21823.08
+Xiaomi,Mi 11,2019,12,256,6.28,3935,54,60,Android,1,67545,2025,54,9.8,Excellent,95,0,0,1,0,Tier2,Store,0,1,1,56,13240.83
+Xiaomi,Poco X5,2021,16,512,5.76,4990,91,45,Android,0,56240,2023,54,5,Good,76,0,0,0,1,Tier1,Individual,7,1,0,100,10441.6
+OnePlus,OnePlus 10,2019,4,1024,5.96,3989,62,90,Android,1,103501,2025,1,3.3,Excellent,99,0,0,0,0,Tier3,Individual,0,1,1,69,70809.79
